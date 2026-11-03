@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kerim Çoklar | Kişisel Web Sayfam</title>
+</head>
+<body>
+
+    <!-- Üst bilgi alanı -->
+    <header>
+        <h1>Kerim Çoklar</h1>
+        <p>Bilgisayar Programcılığı Öğrencisi</p>
+        <hr>
+        <nav>
+            <ul>
+                <li><a href="index.html">Anasayfa</a></li>
+                <li><a href="projeler.html">Projeler ve Hobiler</a></li>
+                <li><a href="#hakkimda">Hakkımda</a></li>
+                <li><a href="#yetenekler">Yetenekler</a></li>
+                <li><a href="#iletisim">İletişim</a></li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+
+    <!-- Ana içerik -->
+    <main>
+
+        <!-- Hakkımda bölümü -->
+        <section id="hakkimda">
+            <h2>Hakkımda</h2>
+            <article>
+                <h3>Ben Kimim?</h3>
+                <p>
+                    Merhaba! Ben Kerim Çoklar. İstanbul Nişantaşı Üniversitesi'nde
+                    Bilgisayar Programcılığı okuyorum. Yazılım geliştirmeyi seviyorum,
+                    özellikle backend tarafı ve veritabanı konuları ilgimi çekiyor.
+                    Boş zamanlarımda kendi küçük projelerimi yapıyorum.
+                    Okulumun resmi sitesine buradan ulaşabilirsiniz:
+                    <a href="https://www.nisantasi.edu.tr" target="_blank" rel="noopener noreferrer">
+                        İstanbul Nişantaşı Üniversitesi
+                    </a>.
+                </p>
+                <figure>
+                    <img
+                        src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600"
+                        alt="Bir laptop başında kodlama yapan kişi"
+                        width="550"
+                    >
+                    <figcaption>Şekil 1: Yazılım geliştirme çalışma ortamı.</figcaption>
+                </figure>
+            </article>
+        </section>
+
+        <hr>
+
+        <!-- Yetenekler bölümü - sıralı ve sırasız listeler -->
+        <section id="yetenekler">
+            <h2>Yeteneklerim</h2>
+
+            <article>
+                <h3>Bildiğim Teknolojiler</h3>
+                <ul>
+                    <li><strong>Programlama Dilleri:</strong> Python, C#, C++, SQL</li>
+                    <li><strong>Web:</strong> HTML5, CSS temelleri</li>
+                    <li><strong>Veritabanı:</strong> PostgreSQL, SQL Server, SQLite</li>
+                    <li><strong>Araçlar:</strong> Git, GitHub, VS Code</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>Bir Problemi Nasıl Çözüyorum?</h3>
+                <ol>
+                    <li>Önce problemi anlamaya çalışıyorum.</li>
+                    <li>Kağıda çözüm yollarını yazıyorum.</li>
+                    <li>Küçük adımlarla kodu yazıyorum.</li>
+                    <li>Test ediyorum, hata varsa düzeltiyorum.</li>
+                    <li>Çalışan sürümü Git ile kaydediyorum.</li>
+                </ol>
+            </article>
+        </section>
+
+        <hr>
+
+        <!-- İletişim formu -->
+        <section id="iletisim">
+            <h2>İletişim Formu</h2>
+            <p>Benimle iletişime geçmek istersen aşağıdaki formu doldurabilirsin:</p>
+
+            <form action="#" method="get">
+
+                <fieldset>
+                    <legend>Kişisel Bilgiler</legend>
+                    <p>
+                        <label for="ad-soyad">Ad Soyad:</label><br>
+                        <input type="text" id="ad-soyad" name="ad_soyad" placeholder="Adınız Soyadınız" required>
+                    </p>
+                    <p>
+                        <label for="eposta">E-posta:</label><br>
+                        <input type="email" id="eposta" name="eposta" placeholder="ornek@mail.com" required>
+                    </p>
+                    <p>
+                        <label for="telefon">Telefon:</label><br>
+                        <input type="tel" id="telefon" name="telefon" placeholder="+90 5xx xxx xx xx">
+                    </p>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Mesaj Detayları</legend>
+                    <p>
+                        <label for="konu">Konu Seçin:</label><br>
+                        <select id="konu" name="konu">
+                            <option value="">-- Seçiniz --</option>
+                            <option value="proje">Proje İş Birliği</option>
+                            <option value="staj">Staj Teklifi</option>
+                            <option value="diger">Diğer</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="tarih">Görüşme Tarihi:</label><br>
+                        <input type="date" id="tarih" name="tarih">
+                    </p>
+                    <fieldset>
+                        <legend>İletişim Tercihi</legend>
+                        <input type="radio" id="tercih-eposta" name="tercih" value="eposta" checked>
+                        <label for="tercih-eposta">E-posta</label>
+                        <input type="radio" id="tercih-telefon" name="tercih" value="telefon">
+                        <label for="tercih-telefon">Telefon</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>İlgilendiğim Alanlar</legend>
+                        <input type="checkbox" id="alan-backend" name="alan" value="backend">
+                        <label for="alan-backend">Backend Geliştirme</label><br>
+                        <input type="checkbox" id="alan-frontend" name="alan" value="frontend">
+                        <label for="alan-frontend">Frontend / HTML-CSS</label><br>
+                        <input type="checkbox" id="alan-veritabani" name="alan" value="veritabani">
+                        <label for="alan-veritabani">Veritabanı</label>
+                    </fieldset>
+                    <p>
+                        <label for="mesaj">Mesajınız:</label><br>
+                        <textarea id="mesaj" name="mesaj" rows="5" cols="45" placeholder="Mesajınızı buraya yazınız..."></textarea>
+                    </p>
+                    <p>
+                        <label for="dosya">Belge Ekle:</label><br>
+                        <input type="file" id="dosya" name="dosya">
+                    </p>
+                </fieldset>
+
+                <br>
+                <input type="submit" value="Gönder">
+                <input type="reset" value="Temizle">
+            </form>
+        </section>
+
+        <hr>
+
+        <!-- Gömülü harita -->
+        <section>
+            <h2>Üniversitemizin Konumu</h2>
+            <p>Okuduğum üniversite İstanbul Maslak'ta yer almaktadır:</p>
+            <iframe
+                src="https://maps.google.com/maps?q=Istanbul+Nisantasi+Universitesi+Maslak&output=embed"
+                width="600"
+                height="350"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="İstanbul Nişantaşı Üniversitesi Harita">
+            </iframe>
+        </section>
+
+    </main>
+
+    <!-- Yan içerik (aside) -->
+    <aside>
+        <h3>Hızlı Bağlantılar</h3>
+        <ul>
+            <li><a href="https://www.nisantasi.edu.tr" target="_blank" rel="noopener noreferrer">Nişantaşı Üniversitesi</a></li>
+            <li><a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <li><a href="https://developer.mozilla.org/tr/" target="_blank" rel="noopener noreferrer">MDN Web Belgeleri</a></li>
+            <li><a href="projeler.html">Projelerimi Gör</a></li>
+        </ul>
+    </aside>
+
+    <hr>
+
+    <!-- Alt bilgi -->
+    <footer>
+        <p><strong>Adres:</strong> Maslak Mahallesi, Sarıyer / İstanbul</p>
+        <p><strong>E-posta:</strong> <a href="mailto:kerim@ornek.com">kerim@ornek.com</a></p>
+        <p>&copy; 2026 Kerim Çoklar. Tüm hakları saklıdır.</p>
+    </footer>
+
+</body>
+</html>
